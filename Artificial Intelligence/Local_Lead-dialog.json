@@ -1,0 +1,1080 @@
+{
+  "intents": [
+    {
+      "intent": "consultar_atrasos",
+      "examples": [
+        {
+          "text": "Alguma linha com defeito?"
+        },
+        {
+          "text": "Alguma paralisação?"
+        },
+        {
+          "text": "A linha está atrasada?"
+        },
+        {
+          "text": "Está tendo atraso?"
+        },
+        {
+          "text": "Está tendo manutenção?"
+        },
+        {
+          "text": "Houve falha técnica?"
+        },
+        {
+          "text": "O metrô está funcionando?"
+        },
+        {
+          "text": "O trem está normal?"
+        },
+        {
+          "text": "O trem parou?"
+        },
+        {
+          "text": "Tem algum problema na linha verde?"
+        },
+        {
+          "text": "Tem falha operacional?"
+        },
+        {
+          "text": "Tem lentidão?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "consultar_clima",
+      "examples": [
+        {
+          "text": "A chuva impacta a linha?"
+        },
+        {
+          "text": "Como está o clima?"
+        },
+        {
+          "text": "O clima vai afetar os trens?"
+        },
+        {
+          "text": "O metrô vai parar?"
+        },
+        {
+          "text": "O tempo está atrapalhando os trens?"
+        },
+        {
+          "text": "Tem risco climático?"
+        },
+        {
+          "text": "Tem risco de enchente?"
+        },
+        {
+          "text": "Tem tempestade hoje?"
+        },
+        {
+          "text": "Vai atrasar por causa da chuva?"
+        },
+        {
+          "text": "Vai chover?"
+        },
+        {
+          "text": "Vai dar enchente?"
+        },
+        {
+          "text": "Vai ter problemas nas linhas?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "consultar_horario",
+      "examples": [
+        {
+          "text": "Como evitar lotação?"
+        },
+        {
+          "text": "Qual horário de pico?"
+        },
+        {
+          "text": "Qual melhor hora para pegar trem?"
+        },
+        {
+          "text": "Qual melhor horário?"
+        },
+        {
+          "text": "Qual melhor horário para embarcar?"
+        },
+        {
+          "text": "Qual o horário mais tranqulo?"
+        },
+        {
+          "text": "Qual o melhor momento para embarcar?"
+        },
+        {
+          "text": "Qual o pior horário?"
+        },
+        {
+          "text": "Quando evitar a Sé?"
+        },
+        {
+          "text": "Quando sai menos cheio?"
+        },
+        {
+          "text": "Que horas a linha lota?"
+        },
+        {
+          "text": "Que horas o metrô fica vazio?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "consultar_lotacao",
+      "examples": [
+        {
+          "text": "A estação está cheia?"
+        },
+        {
+          "text": "A linha azul está lotada?"
+        },
+        {
+          "text": "Como está a linha vermelha?"
+        },
+        {
+          "text": "Como está o fluxo agora?"
+        },
+        {
+          "text": "Como está o metrô?"
+        },
+        {
+          "text": "Como está o movimento?"
+        },
+        {
+          "text": "Está ruim para pegar metrô?"
+        },
+        {
+          "text": "Está tranquilo para embarcar?"
+        },
+        {
+          "text": "O metrô está lotado?"
+        },
+        {
+          "text": "O trem está cheio?"
+        },
+        {
+          "text": "Qual linha está mais vazia?"
+        },
+        {
+          "text": "Tem muita gente na Sé?"
+        },
+        {
+          "text": "Tem superlotação?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "Começar"
+        },
+        {
+          "text": "Eai"
+        },
+        {
+          "text": "Ei"
+        },
+        {
+          "text": "Fala"
+        },
+        {
+          "text": "Oi"
+        },
+        {
+          "text": "Oii"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Opa"
+        },
+        {
+          "text": "Preciso de ajuaa"
+        },
+        {
+          "text": "Preciso de uma informação"
+        },
+        {
+          "text": "Tudo bem?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "clima",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Calor",
+          "synonyms": [
+            "calor",
+            "onda de calor",
+            "temperatura alta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chuva",
+          "synonyms": [
+            "chovendo",
+            "chuva",
+            "tempestade",
+            "temporal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Enchente",
+          "synonyms": [
+            "alagamento",
+            "enchente",
+            "inundação"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Frio",
+          "synonyms": [
+            "frfio",
+            "temperatura baixa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vento",
+          "synonyms": [
+            "rajada",
+            "vendaval",
+            "vento forte"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "estacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ana Rosa",
+          "synonyms": [
+            "ana rosa",
+            "estação ana rosa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Barra Funda",
+          "synonyms": [
+            "barra funda",
+            "estação barra funda",
+            "palmeiras barra funda",
+            "terminal rodoviário barra funda"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Brás",
+          "synonyms": [
+            "bras",
+            "brás",
+            "estação brás"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Consolação",
+          "synonyms": [
+            "consolacao",
+            "consolação",
+            "estação consolação"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Corinthians-Itaquera",
+          "synonyms": [
+            "corinthians itaquera",
+            "estação itaquera",
+            "itaquera"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Liberdade",
+          "synonyms": [
+            "estação liberdade",
+            "liberdade"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Luz",
+          "synonyms": [
+            "estação luz",
+            "luz"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Paraíso",
+          "synonyms": [
+            "estação paraíso",
+            "paraiso",
+            "paraíso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Paulista",
+          "synonyms": [
+            "estação paulista",
+            "paulista"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pinheiros",
+          "synonyms": [
+            "estação pinheiros",
+            "pinheiros"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "República",
+          "synonyms": [
+            "estação república",
+            "república"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sé",
+          "synonyms": [
+            "estação da sé",
+            "estação sé",
+            "sé"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tatuapé",
+          "synonyms": [
+            "estação tatuapé",
+            "tatuapé"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vila Madalena",
+          "synonyms": [
+            "estação vila madalena",
+            "vila madalena"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "linha",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Linha 10 - Turquesa",
+          "synonyms": [
+            "linha 10 ",
+            "linha 10 turquesa",
+            "linha turquesa",
+            "turquesa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha 11 - Coral",
+          "synonyms": [
+            "coral",
+            "linha 11",
+            "linha 11 coral",
+            "linha coral"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha 12 - Safira",
+          "synonyms": [
+            "linha 12",
+            "linha 12 safira",
+            "linha safira",
+            "safira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha 13 - Jade",
+          "synonyms": [
+            "aeroporto",
+            "jade",
+            "linha 13",
+            "linha 13 jade",
+            "linha aeroporto",
+            "linha jade"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha 15 - Prata",
+          "synonyms": [
+            "linha 15",
+            "linha prata",
+            "monotrilho",
+            "prata"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha 7 - Rubi",
+          "synonyms": [
+            "linha 7",
+            "linha 7 rubi",
+            "linha rubi",
+            "rubi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha 8 - Diamante",
+          "synonyms": [
+            "diamante",
+            "linha 8",
+            "linha 8 diamante",
+            "linha diamante"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha 9 - Esmeralda",
+          "synonyms": [
+            "esmeralda",
+            "linha 9",
+            "linha 9 esmeralda",
+            "linha esmeralda"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha Amarela",
+          "synonyms": [
+            "amarela ",
+            "linha 4",
+            "linha 4 amarela",
+            "linha amarela "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha Azul",
+          "synonyms": [
+            "azul",
+            "linha 1",
+            "linha 1 azul",
+            "linha azul"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha Lilás",
+          "synonyms": [
+            "lilás",
+            "linha 5",
+            "linha 5 lilás",
+            "linha lilás"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha Verde",
+          "synonyms": [
+            "linha 2",
+            "linha 2 verde",
+            "linha verde",
+            "verde"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Linha Vermelha",
+          "synonyms": [
+            "linha 3",
+            "linha 3 vermelha",
+            "linha coral vermelha",
+            "linha vermelha",
+            "vermelha"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "nivel_risco",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Alto",
+          "synonyms": [
+            "alto",
+            "crítico",
+            "grave",
+            "intenso",
+            "perigoso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Baixo",
+          "synonyms": [
+            "baixo",
+            "leve",
+            "tranquilo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Moderado",
+          "synonyms": [
+            "médio",
+            "moderado"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "periodo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Agora",
+          "synonyms": [
+            "agora",
+            "neste momento",
+            "tempo real"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Manhã",
+          "synonyms": [
+            "cedo",
+            "início do dia",
+            "manha",
+            "manhã"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Noite",
+          "synonyms": [
+            "fim do dia",
+            "noite"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pico",
+          "synonyms": [
+            "hora do rush",
+            "horário de pico",
+            "pico"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tarde",
+          "synonyms": [
+            "meio da tarde",
+            "tarde"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "problema",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Atraso",
+          "synonyms": [
+            "atrasado",
+            "atraso",
+            "demora",
+            "lentidão"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Falha",
+          "synonyms": [
+            "defeito",
+            "falha",
+            "pane",
+            "problema",
+            "problema técnico"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Manutenção",
+          "synonyms": [
+            "manutencao",
+            "manutenção ",
+            "obra",
+            "reparo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Paralisação",
+          "synonyms": [
+            "interrupção",
+            "linha parada",
+            "paralisacao",
+            "paralisação",
+            "trem parado "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Super lotação",
+          "synonyms": [
+            "cheio",
+            "fluxo alto",
+            "lotado",
+            "superlotacao",
+            "superlotação"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá 👋\nSou a LocalLead IA, uma plataforma inteligente de mobilidade urbana preditiva.\nPosso ajudar com:\n🚇 Lotação das linhas\n🌧️ Impactos climáticos\n⚠️ Atrasos operacionais\n📈 Melhores horários\n🏙️ Fluxo urbano inteligente"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_1_1780011804444",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1780012757215",
+      "context": {
+        "estacao_usuario": "@estacao"
+      },
+      "conditions": "@estacao",
+      "event_name": "input",
+      "dialog_node": "handler_1_1780012757216"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1780012968810",
+      "context": {
+        "linha_usuario": "@linha"
+      },
+      "conditions": "@linha",
+      "event_name": "input",
+      "dialog_node": "handler_1_1780012968811"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1780012757215",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1780012757216",
+      "previous_sibling": "handler_1_1780012757216"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1780012968810",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1780012968811",
+      "previous_sibling": "handler_1_1780012968811"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1780012836486",
+      "context": {
+        "clima_usuario": "@clima"
+      },
+      "conditions": "@clima",
+      "event_name": "input",
+      "dialog_node": "handler_4_1780012836487"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1780012926381",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1780012968127"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1780012709103",
+      "context": {
+        "linha_usuario": "@linha"
+      },
+      "conditions": "@linha",
+      "event_name": "input",
+      "dialog_node": "handler_6_1780012709104"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1780012836486",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1780012836487",
+      "previous_sibling": "handler_4_1780012836487"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_7_1780012709103",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1780012709104",
+      "previous_sibling": "handler_6_1780012709104"
+    },
+    {
+      "type": "standard",
+      "title": "Fallback",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Desculpe, não consegui entender 😅\nVocê pode perguntar sobre:\n🚇 lotação\n🌧️ clima\n⚠️ atrasos\n📈 melhores horários\n🏙️ fluxo urbano"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_1_1780011804444",
+      "previous_sibling": "node_8_1780013091355"
+    },
+    {
+      "type": "frame",
+      "title": "Lotação estação",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🚨 A estação $estacao_usuario apresenta aumento de fluxo previsto."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#consultar_lotacao && @estacao",
+      "dialog_node": "node_3_1780012739819",
+      "previous_sibling": "node_8_1780012675612"
+    },
+    {
+      "type": "frame",
+      "title": "Clima",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🌧️ Há risco de impactos operacionais devido ao clima."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#consultar_clima",
+      "dialog_node": "node_4_1780012821690",
+      "previous_sibling": "node_3_1780012739819"
+    },
+    {
+      "type": "frame",
+      "title": "Melhor horário",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "📈 Melhor horário para embarque na $linha_usuario entre 18h10 e 18h25."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#consultar_horario && @linha",
+      "dialog_node": "node_5_1780012926381",
+      "previous_sibling": "node_6_1780012873158"
+    },
+    {
+      "type": "frame",
+      "title": "Atrasos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "⚠️ A linha azul apresenta risco moderado de lentidão operacional."
+              },
+              {
+                "text": "⚠️ A linha vermelha apresenta risco moderado de lentidão operacional."
+              },
+              {
+                "text": "⚠️ A linha amarela apresenta risco moderado de lentidão operacional."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#consultar_atrasos",
+      "dialog_node": "node_6_1780012873158",
+      "previous_sibling": "node_7_1780402488778"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "⚠️ A $a apresenta risco moderado de lentidão operacional."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1780012873158",
+      "context": {
+        "a": "@problema"
+      },
+      "conditions": "@problema",
+      "dialog_node": "node_7_1780402275677"
+    },
+    {
+      "type": "standard",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_7_1780402275677"
+      },
+      "conditions": "@problema && #consultar_atrasos",
+      "dialog_node": "node_7_1780402488778",
+      "previous_sibling": "node_4_1780012821690"
+    },
+    {
+      "type": "frame",
+      "title": "Lotação linha",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "⚠️ A $linha_usuario apresenta fluxo intenso previsto para os próximos 40 minutos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#consultar_lotacao && @linha",
+      "dialog_node": "node_8_1780012675612",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Previsão urbana",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🔮 Com base na análise climática, fluxo urbano e comportamento histórico da mobilidade, há previsão de aumento de demanda nas próximas 2 horas.\n⚠️ Regiões centrais podem apresentar maior fluxo ferroviário no horário de pico."
+              },
+              {
+                "text": "🛰️ Dados orbitais e análise preditiva indicam aumento de fluxo urbano nas próximas horas.\n\n🌧️ Condições climáticas podem impactar o funcionamento ferroviário em regiões críticas da cidade."
+              },
+              {
+                "text": "🔮 Nossa IA identificou probabilidade de superlotação e lentidão operacional com base em padrões históricos, clima e densidade urbana."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#consultar_clima",
+      "dialog_node": "node_8_1780013091355",
+      "previous_sibling": "node_5_1780012926381"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1780012739819",
+      "variable": "estacao_usuario",
+      "dialog_node": "slot_10_1780012757215"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1780012821690",
+      "variable": "clima_usuario",
+      "dialog_node": "slot_5_1780012836486"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1780012675612",
+      "variable": "linha_usuario",
+      "dialog_node": "slot_7_1780012709103"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1780012926381",
+      "variable": "linha_usuario",
+      "dialog_node": "slot_9_1780012968810",
+      "previous_sibling": "handler_4_1780012968127"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "",
+  "name": "Local_Lead-dialog"
+}

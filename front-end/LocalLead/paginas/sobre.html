@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js" defer></script>
+
+    <title>Sobre | LocalLead</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a
+          href="./sobre.html"
+          class="navbar__brand"
+          aria-label="Página sobre LocalLead"
+        >
+          <img
+            src="../assets/img/logo_locallead.png"
+            alt="Logo LocalLead"
+            class="navbar__logo"
+          />
+          <span class="navbar__name">LocalLead</span>
+        </a>
+
+        <button
+          class="navbar__toggle"
+          type="button"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="navbar-menu"
+        >
+          <span class="navbar__toggle-line"></span>
+          <span class="navbar__toggle-line"></span>
+          <span class="navbar__toggle-line"></span>
+        </button>
+
+        <ul class="navbar__menu" id="navbar-menu">
+          <li class="navbar__item">
+            <a href="../index.html" class="navbar__link">Home</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./sobre.html" class="navbar__link navbar__link--active"
+              >Sobre</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="./solucao.html" class="navbar__link">Solução</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./aplicativo.html" class="navbar__link">Aplicativo</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./faq.html" class="navbar__link">FAQ</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./contato.html" class="navbar__link">Contato</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./integrantes.html" class="navbar__link">Integrantes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about-opening" aria-labelledby="about-title">
+        <span class="about-opening__tag">Sobre o projeto</span>
+
+        <h1 class="about-opening__title" id="about-title">
+          Mobilidade urbana inteligente para reduzir incertezas na rotina de
+          quem depende do trem
+        </h1>
+
+        <p class="about-opening__description">
+          O LocalLead surge da necessidade de transformar dados dispersos em informações claras, relevantes e acessíveis, contribuindo para uma experiência mais eficiente e informada dos usuários do transporte ferroviário urbano.
+        </p>
+      </section>
+
+      <section
+        class="about-cover"
+        aria-label="Contexto visual de mobilidade urbana"
+      >
+        <!-- IMAGEM 1: contexto urbano -->
+        <!-- Local da imagem: ../assets/img/sobre/sobre-hero-contexto-urbano.png -->
+        <img
+          src="../assets/img/sobre/sobre-hero-contexto-urbano.png"
+          alt="Estação ferroviária moderna integrada a uma cidade urbana"
+        />
+      </section>
+
+      <section class="about-context" aria-labelledby="context-title">
+        <div class="about-context__header">
+          <span class="about-section-tag">Contexto</span>
+
+          <h2 id="context-title">
+            O transporte ferroviário é essencial, mas ainda pouco previsível
+          </h2>
+        </div>
+
+        <div class="about-context__text">
+          <p>
+            O transporte ferroviário desempenha um papel fundamental na mobilidade urbana, atendendo diariamente milhares de passageiros em seus deslocamentos para trabalho, estudo e outras atividades. Contudo, a experiência de viagem ainda enfrenta desafios relacionados à disponibilidade e à previsibilidade das informações, incluindo horários de chegada, atrasos, condições operacionais das linhas e níveis de lotação dos vagões.
+          </p>
+
+          <p>
+            A insuficiência de informações previsíveis compromete a gestão do tempo dos passageiros, aumenta a percepção de incerteza durante a espera e dificulta o planejamento eficiente da viagem.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-manifest">
+        <p>
+          Não queremos apenas mostrar o presente, queremos ajudar o passageiro a
+          se preparar melhor para o que pode acontecer no caminho.
+        </p>
+      </section>
+
+      <section class="about-definition" aria-labelledby="definition-title">
+        <div class="about-definition__content">
+          <span class="about-section-tag">O que é o LocalLead</span>
+
+          <h2 id="definition-title">
+            Uma proposta para transformar dados em decisões mais claras
+          </h2>
+
+          <p>
+            O LocalLead é uma proposta de mobilidade urbana inteligente voltada
+            ao transporte ferroviário. A solução combina dados operacionais,
+            análise climática e inteligência preditiva para apoiar decisões
+            antes e durante o deslocamento.
+          </p>
+
+          <p>
+            Em vez de apenas mostrar o que já aconteceu, o projeto busca
+            antecipar riscos, indicar cenários prováveis e ajudar o usuário a
+            tomar decisões mais inteligentes na sua jornada.
+          </p>
+        </div>
+
+        <div class="about-definition__list" aria-label="Pilares do LocalLead">
+          <article>
+            <h3>Previsibilidade</h3>
+            <p>
+              Ajuda o passageiro a entender melhor sua jornada antes de sair.
+            </p>
+          </article>
+
+          <article>
+            <h3>Clareza</h3>
+            <p>Organiza informações importantes em uma experiência simples.</p>
+          </article>
+
+          <article>
+            <h3>Planejamento</h3>
+            <p>Apoia decisões mais rápidas durante o deslocamento urbano.</p>
+          </article>
+
+          <article>
+            <h3>Inteligência urbana</h3>
+            <p>Conecta mobilidade, dados e contexto para melhorar a rotina.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-space" aria-labelledby="space-title">
+        <div class="about-space__image">
+          <!-- IMAGEM 2: Space Connect -->
+          <!-- Local da imagem: ../assets/img/sobre/sobre-space-connect-conceito.png -->
+          <img
+            src="../assets/img/sobre/sobre-space-connect-conceito.png"
+            alt="Satélite monitorando uma cidade moderna com linhas de dados"
+          />
+        </div>
+
+        <div class="about-space__content">
+          <span class="about-section-tag">Space Connect</span>
+
+          <h2 id="space-title">Do espaço para a mobilidade urbana</h2>
+
+          <p>
+            Dentro do tema Space Connect, o projeto aproxima tecnologia espacial
+            de um problema cotidiano: a mobilidade urbana. A proposta é usar o
+            conceito de dados espaciais e análise inteligente para interpretar
+            clima, deslocamento e padrões urbanos.
+          </p>
+
+          <p>
+            Essa conexão permite imaginar uma cidade mais preparada, onde
+            informações sobre ambiente, fluxo e infraestrutura ajudam a tornar o
+            transporte mais eficiente e previsível.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-audience" aria-labelledby="audience-title">
+        <div class="about-audience__header">
+          <span class="about-section-tag">Público-alvo</span>
+
+          <h2 id="audience-title">
+            Criado para quem depende do transporte ferroviário todos os dias
+          </h2>
+
+          <p>
+            O projeto foi pensado para passageiros que precisam de
+            previsibilidade na rotina, especialmente estudantes, trabalhadores
+            urbanos e usuários metropolitanos.
+          </p>
+        </div>
+
+        <div class="about-audience__grid">
+          <article>
+            <h3>Estudantes</h3>
+            <p>
+              Precisam chegar no horário em escolas, faculdades e cursos
+              técnicos.
+            </p>
+          </article>
+
+          <article>
+            <h3>Trabalhadores urbanos</h3>
+            <p>
+              Dependem do trem para cumprir horários e compromissos
+              profissionais.
+            </p>
+          </article>
+
+          <article>
+            <h3>Passageiros metropolitanos</h3>
+            <p>
+              Utilizam o transporte ferroviário para conectar diferentes regiões
+              da cidade.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-final-image" aria-label="Rede urbana inteligente">
+        <!-- IMAGEM 3: rede urbana inteligente -->
+        <!-- Local da imagem: ../assets/img/sobre/sobre-rede-urbana-inteligente.png -->
+        <img
+          src="../assets/img/sobre/sobre-rede-urbana-inteligente.png"
+          alt="Mapa urbano com linhas ferroviárias e conexões digitais"
+        />
+      </section>
+
+      <section class="about-cta" aria-labelledby="about-cta-title">
+        <h2 id="about-cta-title">
+          Conheça como a solução funciona na prática
+        </h2>
+
+        <p>
+          Agora que você conhece o propósito do LocalLead, veja como a
+          tecnologia é aplicada para apoiar a mobilidade urbana inteligente.
+        </p>
+
+        <a href="./solucao.html" class="button button--primary">
+          Ver solução
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__column">
+          <h2 class="footer__title">LocalLead</h2>
+
+          <ul class="footer__list">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="./solucao.html">Solução</a>
+            </li>
+
+            <li>
+              <a href="./aplicativo.html">Aplicativo</a>
+            </li>
+
+            <li>
+              <a href="./faq.html">Perguntas frequentes</a>
+            </li>
+            <li>
+              <a href="./integrantes.html">Integrantes</a>
+            </li>
+            <li>
+              <a href="./contato.html">Fale conosco</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h2 class="footer__title">Projeto</h2>
+
+          <ul class="footer__list">
+            <li>Global Solution FIAP</li>
+            <li>Space Connect</li>
+            <li>Mobilidade urbana inteligente</li>
+            <li>Transporte ferroviário</li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h2 class="footer__title">Explore</h2>
+
+          <ul class="footer__list">
+            <li>Dados espaciais</li>
+            <li>IA preditiva</li>
+            <li>Análise climática</li>
+            <li>Experiência do passageiro</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-content">
+          <a
+            href="../index.html"
+            class="footer__brand"
+            aria-label="Página inicial LocalLead"
+          >
+            <img
+              src="../assets/img/logo_locallead.png"
+              alt="Logo LocalLead"
+              class="footer__logo"
+            />
+          </a>
+
+          <p class="footer__copyright">
+            © 2026 LocalLead — Projeto acadêmico desenvolvido para a Global
+            Solution FIAP.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

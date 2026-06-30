@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js" defer></script>
+
+    <title>Nosso Aplicativo | LocalLead</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a
+          href="./aplicativo.html"
+          class="navbar__brand"
+          aria-label="Página aplicativo do LocalLead"
+        >
+          <img
+            src="../assets/img/logo_locallead.png"
+            alt="Logo LocalLead"
+            class="navbar__logo"
+          />
+          <span class="navbar__name">LocalLead</span>
+        </a>
+
+        <button
+          class="navbar__toggle"
+          type="button"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="navbar-menu"
+        >
+          <span class="navbar__toggle-line"></span>
+          <span class="navbar__toggle-line"></span>
+          <span class="navbar__toggle-line"></span>
+        </button>
+
+        <ul class="navbar__menu" id="navbar-menu">
+          <li class="navbar__item">
+            <a href="../index.html" class="navbar__link">Home</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./sobre.html" class="navbar__link">Sobre</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./solucao.html" class="navbar__link">Solução</a>
+          </li>
+
+          <li class="navbar__item">
+            <a
+              href="./aplicativo.html"
+              class="navbar__link navbar__link--active"
+              >Aplicativo</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="./faq.html" class="navbar__link">FAQ</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./contato.html" class="navbar__link">Contato</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./integrantes.html" class="navbar__link">Integrantes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="app-hero" aria-labelledby="app-title">
+        <div class="app-hero__content">
+          <span class="app-section-tag">MVP LocalLead</span>
+
+          <h1 class="app-hero__title" id="app-title">Nosso aplicativo</h1>
+
+          <p class="app-hero__description">
+            O MVP do LocalLead demonstra como dados operacionais, previsões de horários e informações sobre níveis de ocupação podem ser estruturados em uma interface intuitiva, com o objetivo de apoiar os usuários do transporte ferroviário urbano na tomada de decisões mais informadas.
+          </p>
+
+          <div class="app-hero__actions">
+            <a
+              href="https://locallead.vercel.app/"
+              class="button button--primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Acessar MVP
+            </a>
+
+            <a
+              href="https://github.com/EnzoNukui/mvp_locallead"
+              class="button button--secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="app-hero__image">
+          <img
+            src="../assets/img/app/app-mockup-principal.png"
+            alt="Tela inicial do aplicativo LocalLead"
+          />
+        </div>
+      </section>
+
+      <section class="app-deliveries" aria-labelledby="deliveries-title">
+        <div class="app-section-heading">
+          <span class="app-section-tag">Entregas do MVP</span>
+
+          <h2 id="deliveries-title">O que o aplicativo já demonstra</h2>
+
+          <p>
+            A primeira versão do LocalLead foi pensada para validar a proposta
+            de uma experiência mais clara, rápida e útil para quem depende do
+            transporte ferroviário.
+          </p>
+        </div>
+
+        <div class="app-feature-grid">
+          <article class="app-feature-card">
+            <h3>Status e horários das linhas</h3>
+            <p>
+              Apresenta informações úteis sobre as linhas monitoradas e seus
+              horários estimados.
+            </p>
+          </article>
+
+          <article class="app-feature-card">
+            <h3>Previsão estimada</h3>
+            <p>
+              Ajuda o usuário a entender quando o próximo trem pode chegar com
+              base nos dados disponíveis.
+            </p>
+          </article>
+
+          <article class="app-feature-card">
+            <h3>Informações de vagões</h3>
+            <p>
+              Mostra uma proposta de orientação sobre ocupação e melhor
+              distribuição dos passageiros.
+            </p>
+          </article>
+
+          <article class="app-feature-card">
+            <h3>Experiência mobile</h3>
+            <p>
+              Interface pensada para uso rápido, direto e acessível pelo
+              celular.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-screens" aria-labelledby="screens-title">
+        <div class="app-section-heading">
+          <span class="app-section-tag">Telas do aplicativo</span>
+
+          <h2 id="screens-title">
+            Uma experiência pensada para consulta rápida
+          </h2>
+
+          <p>
+            O MVP foi organizado em telas simples para que o passageiro consiga
+            visualizar as informações principais com poucos toques.
+          </p>
+        </div>
+
+        <div class="app-screens__grid">
+          <article class="app-screen-card">
+            <div class="app-screen-card__image">
+              <img
+                src="../assets/img/app/app-home.jpg"
+                alt="Tela inicial do aplicativo LocalLead"
+              />
+            </div>
+
+            <div class="app-screen-card__content">
+              <h3>Tela inicial</h3>
+              <p>
+                Apresenta a entrada do aplicativo e a navegação principal da
+                experiência.
+              </p>
+            </div>
+          </article>
+
+          <article class="app-screen-card">
+            <div class="app-screen-card__image">
+              <img
+                src="../assets/img/app/app-horarios-linha.jpg"
+                alt="Tela de horários e linhas do aplicativo LocalLead"
+              />
+            </div>
+
+            <div class="app-screen-card__content">
+              <h3>Horários e linhas</h3>
+              <p>
+                Mostra as linhas monitoradas, informações de operação e
+                estimativas de chegada.
+              </p>
+            </div>
+          </article>
+
+          <article class="app-screen-card">
+            <div class="app-screen-card__image">
+              <img
+                src="../assets/img/app/app-vagoes.jpg"
+                alt="Tela de vagões do aplicativo LocalLead"
+              />
+            </div>
+
+            <div class="app-screen-card__content">
+              <h3>Vagões</h3>
+              <p>
+                Representa a proposta de visualização de ocupação e orientação
+                para melhor embarque.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-flow" aria-labelledby="flow-title">
+        <div class="app-flow__content">
+          <span class="app-section-tag">Funcionamento</span>
+
+          <h2 id="flow-title">Como funciona por trás</h2>
+
+          <p>
+            O MVP foi construído com uma separação entre interface e servidor. O
+            front-end apresenta a experiência visual ao usuário, enquanto o
+            back-end consulta APIs externas, organiza as respostas e devolve
+            informações mais claras para serem exibidas no aplicativo.
+          </p>
+        </div>
+
+        <div class="app-flow__steps" aria-label="Fluxo de funcionamento do MVP">
+          <article>
+            <span>01</span>
+            <h3>Front-end</h3>
+            <p>Interface, navegação, telas e experiência mobile.</p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Back-end</h3>
+            <p>Rotas, integração com APIs e tratamento dos dados.</p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>APIs externas</h3>
+            <p>Fontes de status operacional, clima e apoio às estimativas.</p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Usuário</h3>
+            <p>
+              Recebe as informações em uma interface simples e fácil de
+              interpretar.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-data" aria-labelledby="data-title">
+        <div class="app-section-heading">
+          <span class="app-section-tag">Dados e integrações</span>
+
+          <h2 id="data-title">APIs e dados utilizados</h2>
+
+          <p>
+            O LocalLead utiliza dados disponíveis publicamente e regras internas
+            para demonstrar uma experiência de mobilidade mais preditiva. O
+            objetivo é transformar informações técnicas em respostas simples
+            para o passageiro.
+          </p>
+        </div>
+
+        <div class="app-data__grid">
+          <article>
+            <h3>ARTESP / Status metroferroviário</h3>
+            <p>
+              Usada para consultar a situação operacional das linhas e
+              apresentar ao usuário se a linha está normal, reduzida, parcial,
+              paralisada ou encerrada.
+            </p>
+          </article>
+
+          <article>
+            <h3>Dados climáticos</h3>
+            <p>
+              Utilizados para relacionar condições de chuva e clima com
+              possíveis impactos no deslocamento.
+            </p>
+          </article>
+
+          <article>
+            <h3>Intervalos programados</h3>
+            <p>
+              Base para estimar a chegada do próximo trem quando não há
+              localização real disponível.
+            </p>
+          </article>
+
+          <article>
+            <h3>Regras internas do MVP</h3>
+            <p>
+              Organizam os dados recebidos e transformam informações brutas em
+              mensagens mais compreensíveis.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-resources" aria-labelledby="resources-title">
+        <div class="app-section-heading">
+          <span class="app-section-tag">Funcionalidades</span>
+
+          <h2 id="resources-title">Funcionalidades explicadas</h2>
+        </div>
+
+        <div class="app-resources__list">
+          <article>
+            <h3>Home</h3>
+            <p>
+              Centraliza o acesso às principais funcionalidades do aplicativo e
+              apresenta a proposta de mobilidade inteligente.
+            </p>
+          </article>
+
+          <article>
+            <h3>Horários e linhas</h3>
+            <p>
+              Exibe informações de linhas, status operacional e estimativas para
+              apoiar o planejamento da viagem.
+            </p>
+          </article>
+
+          <article>
+            <h3>Vagões</h3>
+            <p>
+              Apresenta uma proposta de orientação sobre ocupação, ajudando o
+              passageiro a pensar melhor onde embarcar.
+            </p>
+          </article>
+
+          <article>
+            <h3>PWA</h3>
+            <p>
+              O projeto foi pensado para funcionar bem em dispositivos móveis,
+              com possibilidade de instalação como aplicativo.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-limitations" aria-labelledby="limitations-title">
+        <div class="app-section-heading">
+          <span class="app-section-tag">Transparência</span>
+
+          <h2 id="limitations-title">Limitações do MVP</h2>
+
+          <p>
+            Por ser um MVP acadêmico, o LocalLead ainda trabalha com limitações
+            técnicas. Algumas funcionalidades dependem de dados oficiais,
+            integrações em tempo real ou futuras parcerias com operadores de
+            transporte.
+          </p>
+        </div>
+
+        <div class="app-limitations__grid">
+          <article>
+            <h3>Sem GPS real dos trens</h3>
+            <p>
+              A localização em tempo real das composições ainda não está
+              disponível no MVP.
+            </p>
+          </article>
+
+          <article>
+            <h3>Previsões estimadas</h3>
+            <p>
+              Os horários são aproximações baseadas em intervalos e regras
+              iniciais.
+            </p>
+          </article>
+
+          <article>
+            <h3>Lotação simulada</h3>
+            <p>
+              A visualização de ocupação dos vagões representa uma proposta de
+              funcionamento.
+            </p>
+          </article>
+
+          <article>
+            <h3>Dependência de APIs externas</h3>
+            <p>
+              Algumas informações podem variar conforme disponibilidade, limite
+              ou estabilidade dos serviços utilizados.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-stack" aria-labelledby="stack-title">
+        <div class="app-section-heading">
+          <span class="app-section-tag">Tecnologias</span>
+
+          <h2 id="stack-title">Tecnologias utilizadas</h2>
+
+          <p>
+            O MVP foi construído separando a camada visual da aplicação e a
+            camada responsável pelas integrações e tratamento dos dados.
+          </p>
+        </div>
+
+        <div class="app-stack__columns">
+          <article class="app-stack__column">
+            <h3>Front-end</h3>
+
+            <ul>
+              <li>
+                <strong>HTML5</strong>
+                <span>Estrutura das páginas e conteúdo semântico.</span>
+              </li>
+
+              <li>
+                <strong>CSS3</strong>
+                <span>Estilização, responsividade e identidade visual.</span>
+              </li>
+
+              <li>
+                <strong>JavaScript</strong>
+                <span
+                  >Interações, manipulação da interface e comportamento
+                  dinâmico.</span
+                >
+              </li>
+
+              <li>
+                <strong>PWA</strong>
+                <span
+                  >Proposta de experiência instalável e otimizada para
+                  mobile.</span
+                >
+              </li>
+            </ul>
+          </article>
+
+          <article class="app-stack__column">
+            <h3>Back-end</h3>
+
+            <ul>
+              <li>
+                <strong>Node.js</strong>
+                <span
+                  >Ambiente utilizado para executar o servidor do projeto.</span
+                >
+              </li>
+
+              <li>
+                <strong>Express</strong>
+                <span>Criação de rotas e organização da API do MVP.</span>
+              </li>
+
+              <li>
+                <strong>APIs externas</strong>
+                <span
+                  >Integração com serviços de status, clima e dados
+                  auxiliares.</span
+                >
+              </li>
+
+              <li>
+                <strong>JSON</strong>
+                <span
+                  >Formato utilizado para organizar e trafegar as respostas do
+                  sistema.</span
+                >
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-next" aria-labelledby="next-title">
+        <div class="app-section-heading">
+          <span class="app-section-tag">Evolução</span>
+
+          <h2 id="next-title">Próximos passos</h2>
+        </div>
+
+        <div class="app-next__grid">
+          <article>Integração com dados em tempo real</article>
+          <article>Expansão para mais linhas ferroviárias</article>
+          <article>Notificações personalizadas</article>
+          <article>Melhoria das previsões de chegada</article>
+          <article>Ocupação de vagões com dados reais</article>
+          <article>Parcerias com operadores de transporte</article>
+        </div>
+      </section>
+
+      <section class="app-cta" aria-labelledby="app-cta-title">
+        <h2 id="app-cta-title">Veja o MVP em funcionamento</h2>
+
+        <p>
+          Acesse o protótipo do LocalLead ou consulte o repositório no GitHub
+          para conhecer a construção técnica do projeto.
+        </p>
+
+        <div class="app-cta__actions">
+          <a
+            href="https://locallead.vercel.app/"
+            class="button button--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Acessar MVP
+          </a>
+
+          <a
+            href="https://github.com/EnzoNukui/mvp_locallead"
+            class="button button--secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver repositório
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__column">
+          <h2 class="footer__title">LocalLead</h2>
+
+          <ul class="footer__list">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="./sobre.html">Sobre</a>
+            </li>
+            <li>
+              <a href="./solucao.html">Solução</a>
+            </li>
+
+            <li>
+              <a href="./faq.html">Perguntas frequentes</a>
+            </li>
+            <li>
+              <a href="./integrantes.html">Integrantes</a>
+            </li>
+
+            <li>
+              <a href="./contato.html">Fale conosco</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h2 class="footer__title">Projeto</h2>
+
+          <ul class="footer__list">
+            <li>Global Solution FIAP</li>
+            <li>Space Connect</li>
+            <li>Mobilidade urbana inteligente</li>
+            <li>Transporte ferroviário</li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h2 class="footer__title">Explore</h2>
+
+          <ul class="footer__list">
+            <li>Dados espaciais</li>
+            <li>IA preditiva</li>
+            <li>Análise climática</li>
+            <li>Experiência do passageiro</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-content">
+          <a
+            href="../index.html"
+            class="footer__brand"
+            aria-label="Página inicial LocalLead"
+          >
+            <img
+              src="../assets/img/logo_locallead.png"
+              alt="Logo LocalLead"
+              class="footer__logo"
+            />
+          </a>
+
+          <p class="footer__copyright">
+            © 2026 LocalLead — Projeto acadêmico desenvolvido para a Global
+            Solution FIAP.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

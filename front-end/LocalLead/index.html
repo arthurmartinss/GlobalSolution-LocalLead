@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script type="module" src="./js/main.js" defer></script>
+
+    <title>LocalLead | Mobilidade Urbana Inteligente</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a
+          href="./index.html"
+          class="navbar__brand"
+          aria-label="Página inicial do LocalLead"
+        >
+          <img
+            src="./assets/img/logo_locallead.png"
+            alt="Logo LocalLead"
+            class="navbar__logo"
+          />
+
+          <span class="navbar__name">LocalLead</span>
+        </a>
+
+        <button
+          class="navbar__toggle"
+          type="button"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="navbar-menu"
+        >
+          <span class="navbar__toggle-line"></span>
+          <span class="navbar__toggle-line"></span>
+          <span class="navbar__toggle-line"></span>
+        </button>
+
+        <ul class="navbar__menu" id="navbar-menu">
+          <li class="navbar__item">
+            <a href="./index.html" class="navbar__link navbar__link--active"
+              >Home</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="./paginas/sobre.html" class="navbar__link">Sobre</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./paginas/solucao.html" class="navbar__link">Solução</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./paginas/aplicativo.html" class="navbar__link"
+              >Aplicativo</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="./paginas/faq.html" class="navbar__link">FAQ</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./paginas/contato.html" class="navbar__link">Contato</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="./paginas/integrantes.html" class="navbar__link"
+              >Integrantes</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <span class="hero__tag"
+            >Space Connect · Mobilidade Urbana Inteligente</span
+          >
+
+          <h1 class="hero__title" id="hero-title">
+            O futuro da mobilidade urbana será preditivo
+          </h1>
+
+          <p class="hero__description">
+            Dados espaciais, inteligência artificial e transporte ferroviário integrados para aprimorar a experiência do usuário antes mesmo do início da viagem.
+          </p>
+
+          <div class="hero__actions">
+            <a href="./paginas/solucao.html" class="button button--primary">
+              Conhecer solução
+            </a>
+
+            <a href="./paginas/sobre.html" class="button button--secondary">
+              Ver projeto
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <img
+            src="./assets/img/home/hero-trem-cidade-compresso.png"
+            alt="Trem urbano em movimento em uma cidade moderna"
+          />
+        </div>
+      </section>
+
+      <section class="visual-section problems" aria-labelledby="problems-title">
+        <div class="section-heading">
+          <span class="section-heading__tag">O problema</span>
+
+          <h2 class="section-heading__title" id="problems-title">
+           A experiência diária no transporte ainda é permeada por fatores de imprevisibilidade
+          </h2>
+        </div>
+
+        <div class="visual-grid visual-grid--three">
+          <article class="visual-card">
+            <div class="visual-card__image">
+              <img
+                src="./assets/img/home/problema-espera-compresso.png"
+                alt="Pessoa esperando o trem em uma plataforma"
+              />
+            </div>
+
+            <div class="visual-card__content">
+              <span class="visual-card__number">01</span>
+              <h3 class="visual-card__title">Espera sem previsão</h3>
+
+              <p class="visual-card__description">
+                A falta de informação transforma minutos em incerteza
+              </p>
+            </div>
+          </article>
+
+          <article class="visual-card">
+            <div class="visual-card__image">
+              <img
+                src="./assets/img/home/problema-chuva-compresso.png"
+                alt="Estação de trem em dia de chuva intensa"
+              />
+            </div>
+
+            <div class="visual-card__content">
+              <span class="visual-card__number">02</span>
+              <h3 class="visual-card__title">Imprevistos sem alerta</h3>
+
+              <p class="visual-card__description">
+                Chuvas e falhas mudam a rota sem aviso claro
+              </p>
+            </div>
+          </article>
+
+          <article class="visual-card">
+            <div class="visual-card__image">
+              <img
+                src="./assets/img/home/problema-lotacao-compresso.png"
+                alt="Passageiros em uma plataforma cheia aguardando o trem"
+              />
+            </div>
+
+            <div class="visual-card__content">
+              <span class="visual-card__number">03</span>
+              <h3 class="visual-card__title">Lotação mal distribuída</h3>
+
+              <p class="visual-card__description">
+                Vagões cheios e espaços vazios dificultam o embarque
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-preview" aria-labelledby="app-preview-title">
+        <div class="app-preview__image">
+          <img
+            src="./assets/img/home/mockup-locaallead-app-compresso.png"
+            alt="Interface do aplicativo LocalLead em um celular"
+          />
+        </div>
+
+        <div class="app-preview__content">
+          <span class="section-heading__tag">LocalLead</span>
+
+          <h2 class="app-preview__title" id="app-preview-title">
+            Decida melhor antes de embarcar
+          </h2>
+
+          <p class="app-preview__description">
+            Uma experiência pensada para passageiros que precisam de
+            previsibilidade, clareza e agilidade no transporte ferroviário
+            urbano.
+          </p>
+
+          <a href="./paginas/solucao.html" class="button button--primary">
+            Como funciona
+          </a>
+        </div>
+      </section>
+
+      <section class="workflow" aria-labelledby="workflow-title">
+        <div class="workflow__content">
+          <span class="section-heading__tag">Como funciona</span>
+
+          <h2 class="workflow__title" id="workflow-title">
+            Satélites > Dados > IA > Mobilidade
+          </h2>
+
+          <div class="workflow__steps" aria-label="Etapas da solução LocalLead">
+            <div class="workflow__step">
+              <span>01</span>
+              <p>Satélites</p>
+            </div>
+
+            <div class="workflow__step">
+              <span>02</span>
+              <p>IA preditiva</p>
+            </div>
+
+            <div class="workflow__step">
+              <span>03</span>
+              <p>Análise urbana</p>
+            </div>
+
+            <div class="workflow__step">
+              <span>04</span>
+              <p>Usuário</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="workflow__image">
+          <img
+            src="./assets/img/home/fluxo-satélite-ia-cidade-compresso.png"
+            alt="Cidade conectada por dados espaciais e inteligência artificial"
+          />
+        </div>
+      </section>
+
+      <section class="visual-section audience" aria-labelledby="audience-title">
+        <div class="section-heading">
+          <span class="section-heading__tag">Público</span>
+
+          <h2 class="section-heading__title" id="audience-title">
+            Criado para quem depende do trem todos os dias
+          </h2>
+        </div>
+
+        <div class="visual-grid visual-grid--three">
+          <article class="visual-card visual-card--large">
+            <div class="visual-card__image">
+              <img
+                src="./assets/img/home/publico-trabalhadores-compresso.png"
+                alt="Trabalhadores usando transporte público urbano"
+              />
+            </div>
+
+            <div class="visual-card__content">
+              <h3 class="visual-card__title">Trabalhadores</h3>
+            </div>
+          </article>
+
+          <article class="visual-card visual-card--large">
+            <div class="visual-card__image">
+              <img
+                src="./assets/img/home/publico-estudantes-compresso.png"
+                alt="Estudantes usando transporte ferroviário urbano"
+              />
+            </div>
+
+            <div class="visual-card__content">
+              <h3 class="visual-card__title">Estudantes</h3>
+            </div>
+          </article>
+
+          <article class="visual-card visual-card--large">
+            <div class="visual-card__image">
+              <img
+                src="./assets/img/home/publico-passageiros-compresso.png"
+                alt="Passageiros em uma estação metropolitana"
+              />
+            </div>
+
+            <div class="visual-card__content">
+              <h3 class="visual-card__title">Passageiros metropolitanos</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="impact" aria-labelledby="impact-title">
+        <div class="impact__content">
+          <span class="section-heading__tag">Impacto</span>
+
+          <h2 class="impact__title" id="impact-title">
+            Mobilidade urbana mais inteligente começa antes da viagem
+          </h2>
+
+          <p class="impact__description">
+            O LocalLead transforma informações dispersas em decisões simples
+            para o passageiro.
+          </p>
+
+          <a href="./paginas/contato.html" class="button button--secondary">
+            Fale com o grupo
+          </a>
+        </div>
+      </section>
+
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="cta__image">
+          <img
+            src="./assets/img/home/cta-cidade-conectada-compresso.png"
+            alt="Cidade conectada com linhas digitais representando mobilidade inteligente"
+          />
+        </div>
+
+        <div class="cta__content">
+          <span class="cta__tag">LocalLead</span>
+
+          <h2 class="cta__title" id="cta-title">
+            Planeje sua viagem antes do problema acontecer
+          </h2>
+
+          <a href="./paginas/solucao.html" class="button button--light">
+            Ver solução
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__column">
+          <h2 class="footer__title">LocalLead</h2>
+
+          <ul class="footer__list">
+            <li>
+              <a href="./paginas/sobre.html">Sobre o projeto</a>
+            </li>
+
+            <li>
+              <a href="./paginas/solucao.html">Nossa solução</a>
+            </li>
+
+            <li>
+              <a href="./paginas/aplicativo.html">Nosso aplicativo</a>
+            </li>
+
+            <li>
+              <a href="./paginas/faq.html">Perguntas frequentes</a>
+            </li>
+
+            <li>
+              <a href="./paginas/integrantes.html">Integrantes</a>
+            </li>
+
+            <li>
+              <a href="./paginas/contato.html">Fale conosco</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h2 class="footer__title">Projeto</h2>
+
+          <ul class="footer__list">
+            <li>Global Solution FIAP</li>
+            <li>Space Connect</li>
+            <li>Mobilidade urbana inteligente</li>
+            <li>Transporte ferroviário</li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h2 class="footer__title">Explore</h2>
+
+          <ul class="footer__list">
+            <li>Dados espaciais</li>
+            <li>IA preditiva</li>
+            <li>Análise climática</li>
+            <li>Experiência do passageiro</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-content">
+          <a
+            href="./index.html"
+            class="footer__brand"
+            aria-label="Página inicial LocalLead"
+          >
+            <img
+              src="./assets/img/logo_locallead.png"
+              alt="Logo LocalLead"
+              class="footer__logo"
+            />
+          </a>
+
+          <p class="footer__copyright">
+            © 2026 LocalLead — Projeto acadêmico desenvolvido para a Global
+            Solution FIAP.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

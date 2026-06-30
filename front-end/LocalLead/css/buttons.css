@@ -1,0 +1,78 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.75rem 1.35rem;
+  border-radius: 99rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.button:hover {
+  transform: translateY(-0.12rem);
+}
+
+.button--primary {
+  background-color: var(--primary-red);
+  color: var(--white);
+  box-shadow: 0 0.75rem 1.5rem rgba(193, 18, 31, 0.22);
+}
+
+.button--primary:hover {
+  background-color: var(--primary-red-dark);
+  box-shadow: 0 1rem 2rem rgba(193, 18, 31, 0.28);
+}
+
+.button--secondary {
+  background-color: transparent;
+  color: var(--text-main);
+  border: 0.0625rem solid var(--border-light);
+}
+
+.button--secondary:hover {
+  background-color: var(--light-bg);
+  border-color: var(--text-main);
+}
+
+.button--light {
+  background-color: var(--white);
+  color: var(--primary-red);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+.button--light:hover {
+  background-color: var(--light-bg);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.16);
+}
+
+/* Até 1300px */
+@media (max-width: 1300px) {
+  .button {
+    min-height: 2.65rem;
+    padding: 0.7rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet e mobile */
+@media (max-width: 768px) {
+  .button {
+    min-height: 2.75rem;
+    padding: 0.8rem 1.25rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .button {
+    width: 100%;
+    min-height: 2.85rem;
+    padding: 0.85rem 1rem;
+    font-size: 0.92rem;
+  }
+}

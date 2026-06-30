@@ -1,0 +1,217 @@
+/* estilo solucao locallead */
+
+/* Pagina principal da solução, padding-top para não ficar atrás da navbar fixa */
+.solucao-main {
+  padding-top: 8rem;
+  background-color: var(--white);
+}
+
+/* Primeiro section da pagina — introdução centralizada com largura máxima de 850px */
+.solucao-intro {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto; /* centraliza horizontalmente na tela */
+  padding: 0 2rem;
+  text-align: center;
+}
+
+/* Parágrafo de descrição abaixo do título da introdução */
+.solucao-intro__description {
+  font-size: 1.25rem;
+  color: var(--text-muted); /* cor cinza definida nas variáveis globais */
+  margin-top: 1.5rem;
+  line-height: 1.7; /* espaçamento entre linhas para facilitar leitura */
+  font-weight: 400;
+}
+
+/* Container que agrupa todas as etapas do fluxo (pipeline = fluxo da solução)
+   display flex em coluna para empilhar as etapas uma abaixo da outra */
+.solucao-pipeline {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem; /* espaço entre cada etapa */
+  max-width: 1140px;
+  margin: 6rem auto 9rem auto; /* centraliza e dá respiro no topo e embaixo */
+  padding: 0 2rem;
+}
+
+/* Cada etapa individual — grid com duas colunas, imagem levemente maior que o texto */
+.pipeline-item {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr; /* coluna da imagem um pouco maior */
+  gap: 5rem;
+  align-items: center; /* alinha imagem e texto no centro vertical */
+}
+
+/* Etapa 02 — inverte a proporção das colunas, texto fica maior que a imagem */
+.pipeline-item--reverse {
+  grid-template-columns: 1fr 1.1fr;
+}
+
+/* Etapa 02 — força a imagem a ocupar a segunda coluna, jogando ela para a direita */
+.pipeline-item--reverse .pipeline-item__image {
+  grid-column: 2;
+}
+
+/* Etapa 02 — força o texto a ocupar a primeira coluna e primeira linha
+   grid-row: 1 garante que o texto sobe para ficar ao lado da imagem */
+.pipeline-item--reverse .pipeline-item__content {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* Estilo do container da imagem de cada etapa
+   aspect-ratio mantém proporção fixa independente do tamanho da tela
+   overflow: hidden esconde o que ultrapassar o border-radius */
+.pipeline-item__image {
+  width: 100%;
+  aspect-ratio: 16 / 11; /* proporção fixa da imagem */
+  border-radius: 16px; /* cantos arredondados */
+  overflow: hidden; /* necessário para o border-radius funcionar na imagem */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.04); /* sombra sutil embaixo */
+  background-color: var(--light-bg);
+  border: 1px solid var(--border-light);
+  transition: var(--transition-smooth); /* transição suave para efeitos de hover */
+}
+
+/* A imagem em si preenche todo o container sem distorcer
+   object-fit: cover corta o excesso mantendo as proporções */
+.pipeline-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* remove espaço extra que o navegador coloca embaixo de imagens */
+}
+
+/* Conteúdo de texto de cada etapa em coluna com espaço entre os elementos */
+.pipeline-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Etiqueta da etapa ex: "Etapa 01" — pequeno, vermelho e em maiúsculas */
+.pipeline-item__step {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase; /* deixa o texto em maiúsculas via CSS */
+  color: var(--primary-red);
+  letter-spacing: 0.0625rem; /* espaçamento entre letras */
+}
+
+/* Título de cada etapa */
+.pipeline-item__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.03rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Parágrafos de texto de cada etapa */
+.pipeline-item__text {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  text-align: justify; /* alinha o texto nas duas margens */
+}
+
+/* MEDIA QUERIES — adaptação para telas menores */
+
+/* Telas até 1300px — reduz espaços e iguala as colunas */
+@media (max-width: 1300px) {
+  .solucao-pipeline {
+    gap: 5.5rem;
+  }
+
+  /* Iguala as colunas para 1fr 1fr pois o espaço já é menor */
+  .pipeline-item,
+  .pipeline-item--reverse {
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Tablet — muda para uma coluna, empilhando imagem e texto */
+@media (max-width: 768px) {
+  .solucao-main {
+    padding-top: 6rem;
+  }
+
+  .solucao-intro__description {
+    font-size: 1.1rem;
+  }
+
+  .solucao-pipeline {
+    gap: 4.5rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  /* Uma coluna só — imagem em cima, texto embaixo */
+  .pipeline-item,
+  .pipeline-item--reverse {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  /* Reseta a imagem do reverse para voltar à coluna 1, já que só existe uma coluna */
+  .pipeline-item--reverse .pipeline-item__image {
+    grid-column: 1;
+  }
+
+  .pipeline-item__title {
+    font-size: 1.45rem;
+  }
+
+  /* No mobile justify fica ruim com textos curtos, então volta para left */
+  .pipeline-item__text {
+    text-align: left;
+  }
+}
+
+/* Celulares pequenos — reduz fontes e espaçamentos */
+@media (max-width: 480px) {
+  .solucao-main {
+    padding-top: 5rem;
+  }
+
+  .solucao-intro {
+    padding: 0 1.25rem;
+  }
+
+  .solucao-intro__description {
+    font-size: 1rem;
+  }
+
+  .solucao-pipeline {
+    padding: 0 1.25rem 4rem 1.25rem;
+    gap: 3.5rem;
+  }
+
+  .pipeline-item__title {
+    font-size: 1.3rem;
+  }
+
+  .pipeline-item__text {
+    font-size: 0.95rem;
+  }
+}
+
+/* ANIMAÇÃO DE REVELAÇÃO
+   As etapas começam invisíveis e deslocadas para baixo
+   O JavaScript adiciona a classe is-visible quando o elemento entra na tela */
+.pipeline-item {
+  opacity: 0; /* começa invisível */
+  transform: translateY(40px); /* começa 40px abaixo da posição final */
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease; /* transição suave de 0.8 segundos */
+}
+
+/* Quando o JavaScript detecta que o elemento está visível na tela,
+   adiciona essa classe que traz o elemento de volta com animação suave */
+.pipeline-item.is-visible {
+  opacity: 1;
+  transform: translateY(0); /* volta para a posição original */
+}

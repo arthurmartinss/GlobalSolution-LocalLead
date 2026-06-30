@@ -1,0 +1,82 @@
+/* Reset estrutural obrigatório */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração base da página */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Variáveis globais do projeto */
+:root {
+  --primary-red: #c1121f;
+  --primary-red-dark: #8f0d17;
+  --primary-red-light: #e63946;
+
+  --dark-bg: #111111;
+  --dark-soft: #1d1d1f;
+
+  --light-bg: #f5f5f7;
+  --white: #ffffff;
+
+  --text-main: #1d1d1f;
+  --text-muted: #6e6e73;
+  --text-light: #f5f5f7;
+
+  --border-light: #d2d2d7;
+
+  --font-stack: "Segoe UI", Tahoma, Verdana, sans-serif; 
+
+  --transition-smooth: all 0.3s ease;
+}
+
+body {
+  font-family: var(--font-stack);
+  background-color: var(--white);
+  color: var(--text-main);
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+main,
+section,
+header,
+footer,
+nav {
+  width: 100%;
+}

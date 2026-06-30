@@ -1,0 +1,163 @@
+/* estilo faq locallead */
+
+/* Página principal do FAQ
+   padding-top para o conteúdo não ficar escondido atrás da navbar fixa
+   min-height garante que a página nunca fique menor que 85% da tela */
+.faq-main {
+  padding-top: 8rem;
+  min-height: 85vh;
+  background-color: var(--white);
+}
+
+/* Layout principal do FAQ em duas colunas
+   coluna da esquerda é o título, coluna da direita são as perguntas
+   a direita é maior (1.8fr) pois tem mais conteúdo */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 4rem;
+  width: 100%; /* largura */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 6rem 2rem;
+}
+
+/* Título da esquerda fica fixo enquanto o usuário rola as perguntas
+   position: sticky faz ele grudar no topo conforme a página desce
+   top: 8rem define a distância do topo onde ele para de rolar
+   height: max-content impede ele de crescer além do seu conteúdo */
+.faq-grid__heading {
+  position: sticky;
+  top: 8rem;
+  height: max-content;
+}
+
+/* Coluna das perguntas empilhadas uma abaixo da outra */
+.faq-grid__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;  /* gap espaco entre um elemento e outro */
+}
+
+/* Cada pergunta e resposta juntas
+   border transparent no início para não pular de tamanho quando abrir */
+.faq-item {
+  background-color: var(--light-bg);
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: var(--transition-smooth);  /* base css  */
+}
+
+/* Linha clicável da pergunta
+   justify-content: space-between empurra o texto para a esquerda e o ícone para a direita
+   cursor: pointer mostra a mãozinha ao passar o mouse
+   user-select: none impede o usuário de selecionar o texto ao clicar */
+.faq-item__question {
+  padding: 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+/* Ícone "+" que aparece no lado direito da pergunta
+   feito com ::after para não precisar colocar nada no HTML */
+   
+   /* content depois : inserir o + */
+.faq-item__question::after {
+  content: "+";
+  font-size: 1.5rem;
+  color: var(--primary-red);
+  transition: var(--transition-smooth);
+}
+
+/* Resposta começa escondida com display: none
+   o JavaScript mostra ela adicionando a classe aberto */
+.faq-item__answer {
+  display: none;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Quando o JavaScript adiciona a classe aberto no faq-item
+   o card muda de cor, ganha borda e sombra */
+.faq-item.aberto {
+  background-color: var(--white);
+  border-color: var(--border-light);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* Quando aberto, a resposta aparece */
+.faq-item.aberto .faq-item__answer {
+  display: block;
+}
+
+/* Quando aberto, o "+" vira "−" para indicar que pode fechar */
+.faq-item.aberto .faq-item__question::after {
+  content: "−";
+  color: var(--primary-red-dark);
+}
+
+/* Telas até 1300px
+   reduz a proporção das colunas e os espaçamentos */
+@media (max-width: 1300px) {
+  .faq-grid {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2.5rem;
+    padding: 0 1.5rem 5rem 1.5rem;
+  }
+}
+
+/* Tablet até 768px
+   muda para uma coluna só, título em cima e perguntas embaixo
+   desativa o sticky pois em uma coluna ele atrapalharia a leitura */
+@media (max-width: 768px) {
+  .faq-main {
+    padding-top: 6rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .faq-grid__heading {
+    position: static;
+  }
+
+  .faq-item__question {
+    padding: 1.25rem;
+  }
+
+  .faq-item__answer {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+/* Celulares pequenos até 480px
+   reduz fontes e espaçamentos para caber melhor na tela */
+@media (max-width: 480px) {
+  .faq-main {
+    padding-top: 5rem;
+  }
+
+  .faq-grid {
+    padding: 0 1rem 4rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .faq-item__question {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .faq-item__answer {
+    padding: 0 1rem 1rem 1rem;
+  }
+}

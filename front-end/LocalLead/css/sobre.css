@@ -1,0 +1,504 @@
+
+
+.about-opening {
+  width: min(100% - 2rem, 68rem);
+  margin-inline: auto;
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.about-opening__tag,
+.about-section-tag {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--primary-red);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.about-opening__title {
+  color: var(--text-main);
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  font-weight: 800;
+  line-height: 1.03;
+  letter-spacing: -0.13rem;
+}
+
+.about-opening__description {
+  max-width: 44rem;
+  margin: 1.4rem auto 0;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+/* ==========================================================================
+   IMAGEM DE CAPA
+   ========================================================================== */
+
+.about-cover {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: var(--light-bg);
+}
+
+.about-cover img {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ==========================================================================
+   CONTEXTO DO PROBLEMA
+   ========================================================================== */
+
+.about-context {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  padding: 6rem 0;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-context__header h2,
+.about-definition__content h2,
+.about-space__content h2,
+.about-audience__header h2,
+.about-cta h2 {
+  color: var(--text-main);
+  font-size: clamp(1.9rem, 3.5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.08rem;
+}
+
+.about-context__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.about-context__text p,
+.about-definition__content p,
+.about-space__content p,
+.about-audience__header p,
+.about-audience__grid p,
+.about-definition__list p,
+.about-cta p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* ==========================================================================
+   MANIFESTO
+   ========================================================================== */
+
+.about-manifest {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  padding: 4.5rem;
+  border-radius: 2rem;
+  background-color: var(--light-bg);
+  text-align: center;
+}
+
+.about-manifest p {
+  max-width: 58rem;
+  margin-inline: auto;
+  color: var(--text-main);
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.1rem;
+}
+
+/* ==========================================================================
+   O QUE É O LOCALLEAD
+   ========================================================================== */
+
+.about-definition {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  padding: 6rem 0;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-definition__content {
+  max-width: 42rem;
+}
+
+.about-definition__content p {
+  margin-top: 1.3rem;
+}
+
+.about-definition__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.about-definition__list article {
+  padding: 1.5rem;
+  border: 0.0625rem solid var(--border-light);
+  border-radius: 1.3rem;
+  background-color: var(--white);
+  transition: var(--transition-smooth);
+}
+
+.about-definition__list article:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.06);
+}
+
+.about-definition__list h3 {
+  margin-bottom: 0.45rem;
+  color: var(--text-main);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.03rem;
+}
+
+/* ==========================================================================
+   SPACE CONNECT
+   ========================================================================== */
+
+.about-space {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  padding: 4rem;
+  border-radius: 2rem;
+  background-color: var(--light-bg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-space__image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.about-space__image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-space__content p {
+  margin-top: 1.3rem;
+}
+
+/* ==========================================================================
+   PÚBLICO-ALVO
+   ========================================================================== */
+
+.about-audience {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  padding: 6rem 0;
+}
+
+.about-audience__header {
+  max-width: 48rem;
+  margin-bottom: 3rem;
+}
+
+.about-audience__header p {
+  margin-top: 1.2rem;
+}
+
+.about-audience__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.about-audience__grid article {
+  padding: 1.6rem;
+  border: 0.0625rem solid var(--border-light);
+  border-radius: 1.3rem;
+  background-color: var(--white);
+  transition: var(--transition-smooth);
+}
+
+.about-audience__grid article:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.06);
+}
+
+.about-audience__grid h3 {
+  margin-bottom: 0.7rem;
+  color: var(--text-main);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.03rem;
+}
+
+/* ==========================================================================
+   IMAGEM FINAL
+   ========================================================================== */
+
+.about-final-image {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: var(--light-bg);
+}
+
+.about-final-image img {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ==========================================================================
+   CTA FINAL
+   ========================================================================== */
+
+.about-cta {
+  width: min(100% - 2rem, 58rem);
+  margin-inline: auto;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.about-cta p {
+  max-width: 42rem;
+  margin: 1rem auto 2rem;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+@media (max-width: 1300px) {
+  .about-cover,
+  .about-context,
+  .about-manifest,
+  .about-definition,
+  .about-space,
+  .about-audience,
+  .about-final-image {
+    width: min(100% - 2rem, 82rem);
+  }
+
+  .about-context,
+  .about-definition {
+    gap: 3rem;
+  }
+
+  .about-space {
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .about-manifest {
+    padding: 4rem 3rem;
+  }
+
+  .about-opening__title {
+    font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-opening {
+    width: min(100% - 1.5rem, 100%);
+    padding: 4.5rem 0 3rem;
+  }
+
+  .about-opening__title {
+    font-size: clamp(2.2rem, 9vw, 3.4rem);
+    letter-spacing: -0.08rem;
+  }
+
+  .about-opening__description {
+    font-size: 1rem;
+  }
+
+  .about-cover,
+  .about-context,
+  .about-manifest,
+  .about-definition,
+  .about-space,
+  .about-audience,
+  .about-final-image {
+    width: min(100% - 1.5rem, 100%);
+  }
+
+  .about-cover,
+  .about-final-image,
+  .about-space,
+  .about-manifest {
+    border-radius: 1.4rem;
+  }
+
+  .about-cover img,
+  .about-final-image img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .about-context,
+  .about-definition {
+    padding: 4rem 0;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-context__header h2,
+  .about-definition__content h2,
+  .about-space__content h2,
+  .about-audience__header h2,
+  .about-cta h2 {
+    font-size: clamp(1.8rem, 7vw, 2.8rem);
+    letter-spacing: -0.06rem;
+  }
+
+  .about-manifest {
+    padding: 3rem 2rem;
+  }
+
+  .about-manifest p {
+    font-size: clamp(1.8rem, 7vw, 3rem);
+    letter-spacing: -0.06rem;
+  }
+
+  .about-space {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-space__image {
+    border-radius: 1.1rem;
+  }
+
+  .about-audience {
+    padding: 4rem 0;
+  }
+
+  .about-audience__header {
+    margin-bottom: 2rem;
+  }
+
+  .about-audience__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-cta {
+    width: min(100% - 1.5rem, 100%);
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-opening {
+    width: min(100% - 1rem, 100%);
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .about-opening__tag,
+  .about-section-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .about-opening__title {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    letter-spacing: -0.06rem;
+  }
+
+  .about-opening__description {
+    font-size: 0.92rem;
+  }
+
+  .about-cover,
+  .about-context,
+  .about-manifest,
+  .about-definition,
+  .about-space,
+  .about-audience,
+  .about-final-image,
+  .about-cta {
+    width: min(100% - 1rem, 100%);
+  }
+
+  .about-cover,
+  .about-final-image,
+  .about-space,
+  .about-manifest {
+    border-radius: 1.1rem;
+  }
+
+  .about-cover img,
+  .about-final-image img,
+  .about-space__image img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-context,
+  .about-definition,
+  .about-audience,
+  .about-cta {
+    padding: 3.2rem 0;
+  }
+
+  .about-context__header h2,
+  .about-definition__content h2,
+  .about-space__content h2,
+  .about-audience__header h2,
+  .about-cta h2 {
+    font-size: clamp(1.7rem, 9vw, 2.4rem);
+    letter-spacing: -0.05rem;
+  }
+
+  .about-context__text p,
+  .about-definition__content p,
+  .about-space__content p,
+  .about-audience__header p,
+  .about-audience__grid p,
+  .about-definition__list p,
+  .about-cta p {
+    font-size: 0.9rem;
+  }
+
+  .about-manifest {
+    padding: 2.4rem 1.4rem;
+  }
+
+  .about-manifest p {
+    font-size: clamp(1.7rem, 8vw, 2.3rem);
+  }
+
+  .about-definition__list article,
+  .about-audience__grid article {
+    padding: 1.2rem;
+    border-radius: 1rem;
+  }
+
+  .about-space {
+    padding: 1.2rem;
+    gap: 1.5rem;
+  }
+
+  .about-cta .button {
+    width: 100%;
+  }
+}

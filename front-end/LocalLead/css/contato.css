@@ -1,0 +1,286 @@
+/* Estilo da página de contato */
+
+/* Topo da página com título e subtítulo
+   padding-top para não ficar atrás da navbar
+   flex coluna para empilhar título e subtítulo centralizados */
+.contact-hero {
+  padding: 8rem 2rem 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Centraliza o bloco do título */
+.contact-hero .section-heading {
+  text-align: center;
+  width: 100%;
+}
+
+/* Força o título a ficar centralizado
+   !important porque o CSS global tinha outro alinhamento nessa classe */
+.contact-hero .section-heading__title {
+  text-align: center !important;
+  margin-inline: auto;
+  width: 100%;
+}
+
+/* Texto pequeno abaixo do título
+   max-width para o texto não ficar muito largo */
+.contact-hero__subtitle {
+  width: 100%;
+  max-width: 650px;
+  margin: 1.25rem auto 0 auto;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Caixa que envolve o formulário
+   max-width para o formulário não ficar enorme em telas grandes
+   margin: 0 auto centraliza na tela */
+.contact-container {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 2rem 8rem 2rem;
+  box-sizing: border-box;
+}
+
+/* Card cinza que contém todos os campos do formulário
+   flex coluna para os campos ficarem um abaixo do outro */
+.contact-form {
+  background-color: var(--light-bg);
+  border-radius: 16px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Cada campo com seu label em cima e o input embaixo */
+.contact-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* Texto do label de cada campo */
+.contact-form__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-align: left;
+}
+
+/* Estilo padrão de todos os campos do formulário
+   box-sizing garante que o campo não estoure a largura da tela */
+.contact-form__input {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--border-light);
+  border-radius: 8px;
+  background-color: var(--white);
+  color: var(--text-main);
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Quando o usuário clica no campo para digitar
+   tira a borda padrão do navegador e coloca a borda vermelha do projeto */
+.contact-form__input:focus {
+  outline: none;  /* tirando borda com foco no usuario */
+  border-color: var(--primary-red);
+  box-shadow: 0 0 0 3px rgba(224, 46, 36, 0.05);  /* sombra atras */
+
+}
+
+/* Estilo do campo de seleção (dropdown)
+   appearance: none remove o visual padrão do navegador
+   background-image coloca uma seta própria no lado direito */
+select.contact-form__input {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M6 9l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.25rem;
+  padding-right: 2.5rem;
+}
+
+/* Campo de mensagem (textarea)
+   resize: vertical deixa o usuário aumentar só a altura
+   font-family: inherit porque o textarea usa fonte diferente por padrão */
+textarea.contact-form__input {
+  resize: vertical;
+  min-height: 140px;
+  font-family: inherit;
+}
+
+/* Mensagem de erro em vermelho que aparece abaixo do campo */
+.contact-form__error {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--primary-red);
+  margin-top: 0.25rem;
+}
+
+/* Borda vermelha no campo quando o JavaScript detecta que está errado
+   !important para sobrescrever o estilo padrão do campo */
+.contact-form__input--error {
+  border-color: var(--primary-red) !important;
+  background-color: rgba(224, 46, 36, 0.01);
+}
+
+/* Botão de enviar alinhado à direita */
+.contact-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* Estilo do botão de enviar */
+.contact-form__btn {
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+/* Ao passar o mouse o botão escurece e sobe um pouco */
+.contact-form__btn:hover {
+  background-color: var(--primary-red-dark);
+  transform: translateY(-1px);
+}
+
+/* ===== CARD DE SUCESSO =====
+   aparece no lugar do formulário depois que o usuário envia
+   animation: fadeIn faz ele aparecer suavemente */
+.success-card {
+  background-color: var(--light-bg);
+  border-radius: 16px;
+  padding: 4rem 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Ícone grande no topo do card de sucesso */
+.success-card__icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Título do card de sucesso */
+.success-card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Texto explicativo do card de sucesso */
+.success-card__text {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+/* Botão de voltar dentro do card de sucesso */
+.success-card__btn {
+  margin-top: 0.75rem;
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.success-card__btn:hover {
+  background-color: var(--primary-red-dark);
+}
+
+/* Animação de entrada do card de sucesso
+   começa invisível e um pouco abaixo, sobe e aparece suavemente */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MEDIA QUERIES */
+
+/* Telas até 992px — reduz o tamanho do formulário */
+@media (max-width: 992px) {
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .contact-container {
+    max-width: 560px;
+  }
+}
+
+/* Tablet até 768px
+   botão de enviar ocupa a largura toda para facilitar o toque na tela */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding-top: 6rem;
+  }
+
+  .contact-form {
+    padding: 2rem 1.25rem;
+  }
+
+  .contact-form__actions {
+    justify-content: stretch;
+  }
+
+  .contact-form__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Celulares pequenos até 480px — reduz espaçamentos */
+@media (max-width: 480px) {
+  .contact-hero {
+    padding: 5rem 1rem 2rem 1rem;
+  }
+
+  .contact-hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-container {
+    padding: 0 1rem 5rem 1rem;
+  }
+}
